@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>foodmato</title>
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
+</head>
+<style>
+/* responsive food ordering webpage */
+/* box model, css flexbox, css animations */
+
+
+/* box model
+    border => thickness, style, color
+    padding
+    margin
+*/
+*{
+    font-family: sans-serif;
+}
+.card{
+    transition: .2s;
+    border: 1px solid rgb(172, 99, 99);
+    width: 260px;
+    padding:  10px;
+    margin: 10px;
+    border-radius: 14px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+     background-color: #000000;
+}
+h3{background-color: #010101;
+    color: #ef6363;
+}
+p{background-color:#000000;
+    color:#ffffff;
+}
+.card:hover{
+    /*transform: rotate(3deg);*/
+    width: 270px;
+    border-radius: 10%;
+    border: 3px solid rgb(216, 133, 133);
+    box-shadow: 4px 8px 16px 8px rgb(230, 154, 154) ;
+}
+.card-img{
+    width: 100%;
+    border-radius: 14px;
+}
+.flexbox{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+*{
+background-color:rgb(0, 0, 0);
+}
+h1{color: #ff9090;
+    align-items: center;
+    justify-content: center;
+}
+</style>
+<body>
+    <h1 class="animate__animated animate__backInRight">Foodmato</h1>
+    <div class="flexbox">
+        <div class="card">
+            <img src=https://images.unsplash.com/photo-1520072959219-c595dc870360?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTN8fGJ1cmdlciUyMDE2MDAqOTB8ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&w=600&q=60 class="card-img" alt="">
+            <h3>Veg Supreme Burger</h3>
+            <p> A veg supreme burger is a veggie patty with cheese and sauce on a bun. It’s tasty and healthy.</p>
+        </div>
+    
+        <div class="card">
+            <img src=https://images.unsplash.com/photo-1512621776951-a57141f2eefd?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8c2FsYWQlMjAxNjAwKjkwfGVufDB8fDB8fHww&auto=format&fit=crop&w=600&q=60 class="card-img" alt="">
+            <h3>Green Salad</h3>
+            <p>A veg salad is vegetables with dressing and toppings. It is healthy and tasty. You can eat it anytime.</p>
+        </div>
+
+        <div class="card">
+            <img src=https://plus.unsplash.com/premium_photo-1675103909152-4aa4efcb5598?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8cGl6emF8ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&w=600&q=60 class="card-img" alt="">
+            <h3>Veg Supreme Pizza</h3>
+            <p>A veg supreme pizza is a pizza with veggies and cheese. It has different veggies and cheese.</p>
+        </div>
+
+        <div class="card">
+            <img src=https://media.istockphoto.com/id/1374666267/photo/masala-dosa-south-indian-breakfast.jpg?b=1&s=612x612&w=0&k=20&c=_5EZL67ZUw-_6XnW8V-rS1xVEbyVVdKha9LE7tzRdQo= class="card-img" alt="">
+            <h3>Masala dosa</h3>
+            <p>A masala dosa is a rice and lentil crepe with potato filling and sauces. It is a South Indian breakfast.</p>
+        </div>
+    </div>
+    
+</body>
+
+</html>
